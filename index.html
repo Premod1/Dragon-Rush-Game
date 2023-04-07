@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dragon Rush</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body
+    class="body"
+    onload="idleAnimationStart(); createBox();"
+    onkeypress="keyCheck(event)"
+  >
+    <!-- The background image -->
+    <div class="background" id="background">
+      <img src="resources/Idle (1).png" class="boy" id="boy" />
+      <div class="score" id="score">0</div>
+      <div class="end" id="end">
+        <div style="color: rgb(251, 255, 11)">Game Over</div>
+        <div style="color: rgb(145, 189, 0)">You Score</div>
+        <div style="color: rgb(54, 200, 223)" id="endscore">0</div>
+        <button class="btn" onclick="reload()">Try Again</button>
+      </div>
+    </div>
+
+    <!-- The JavaScript code -->
+    <script src="script.js"></script>
+  </body>
+</html>
